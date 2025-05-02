@@ -31,14 +31,14 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h2 className="hero-animate opacity-0 inline-block text-lg bg-portfolio-soft-purple text-portfolio-purple px-4 py-2 rounded-full font-medium">
-              👋 Hello, I'm a Full Stack Developer
+              👋 Hello, I'm Dharavath Ganesh Chandu
             </h2>
             <div className="space-y-2">
               <h1 className="hero-animate opacity-0 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                Building digital <span className="text-portfolio-purple">experiences</span> that inspire
+                Full Stack <span className="text-portfolio-purple">Developer</span> with a passion for building
               </h1>
               <p className="hero-animate opacity-0 text-lg md:text-xl text-muted-foreground max-w-lg mt-4">
-                I create elegant solutions to complex problems through code, design, and innovation.
+                I create elegant solutions using Java, Python, JavaScript, and React to solve real-world problems.
               </p>
             </div>
             <div className="hero-animate opacity-0 flex flex-col sm:flex-row gap-4 pt-4">
@@ -58,7 +58,7 @@ const HeroSection = () => {
             <div className="hero-animate opacity-0 pt-8 flex gap-6">
               <div className="flex items-center">
                 <div className="bg-portfolio-soft-purple w-12 h-12 rounded-full flex items-center justify-center">
-                  <span className="text-portfolio-purple font-bold text-xl">3+</span>
+                  <span className="text-portfolio-purple font-bold text-xl">1+</span>
                 </div>
                 <div className="ml-3">
                   <p className="font-medium">Years of</p>
@@ -67,7 +67,7 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center">
                 <div className="bg-portfolio-soft-blue w-12 h-12 rounded-full flex items-center justify-center">
-                  <span className="text-blue-600 font-bold text-xl">20+</span>
+                  <span className="text-blue-600 font-bold text-xl">2+</span>
                 </div>
                 <div className="ml-3">
                   <p className="font-medium">Completed</p>

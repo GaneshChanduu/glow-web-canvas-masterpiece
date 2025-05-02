@@ -16,56 +16,38 @@ const ProjectsSection = () => {
   const [projects, setProjects] = useState<Project[]>([
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "Modern online store built with React and Node.js",
+      title: "E-Commerce Website",
+      description: "Fully functional e-commerce platform with product listings, shopping cart, and secure checkout",
       image: "https://images.unsplash.com/photo-1661956602944-249bcd04b63f",
       category: "web",
-      tags: ["React", "Node.js", "MongoDB"],
+      tags: ["HTML", "CSS", "Bootstrap", "JavaScript"],
       link: "#"
     },
     {
       id: 2,
-      title: "Finance Dashboard",
-      description: "Interactive dashboard for financial data visualization",
+      title: "Food Delivery Website",
+      description: "Responsive food delivery platform with intuitive navigation and streamlined ordering process",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-      category: "app",
-      tags: ["React", "TypeScript", "Chart.js"],
+      category: "web",
+      tags: ["HTML", "CSS", "Bootstrap"],
       link: "#"
     },
     {
       id: 3,
-      title: "Social Media App",
-      description: "Feature-rich social platform with real-time updates",
+      title: "UDAN Testing Project",
+      description: "Worked on Universal Digital Assistant testing for nano health and Entab International School websites",
       image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868",
       category: "app",
-      tags: ["React Native", "Firebase", "Redux"],
+      tags: ["TypeScript", "Testing", "QA"],
       link: "#"
     },
     {
       id: 4,
-      title: "Portfolio Website",
-      description: "Responsive portfolio site with modern animations",
+      title: "SaaS Testing",
+      description: "Tested various SaaS applications including Workday, Zoom, Canva, and ServiceNow",
       image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8",
-      category: "web",
-      tags: ["HTML/CSS", "JavaScript", "GSAP"],
-      link: "#"
-    },
-    {
-      id: 5,
-      title: "Task Management",
-      description: "Collaborative task management application",
-      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b",
       category: "app",
-      tags: ["React", "Node.js", "Socket.io"],
-      link: "#"
-    },
-    {
-      id: 6,
-      title: "Corporate Site",
-      description: "Enterprise website with CMS integration",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      category: "web",
-      tags: ["React", "Next.js", "Tailwind CSS"],
+      tags: ["QA", "Testing", "SaaS"],
       link: "#"
     },
   ]);
@@ -108,7 +90,7 @@ const ProjectsSection = () => {
           <h2 className="projects-animate opacity-0 text-portfolio-purple text-lg font-semibold">My Portfolio</h2>
           <h3 className="projects-animate opacity-0 text-3xl md:text-4xl font-bold mt-2">Recent Projects</h3>
           <p className="projects-animate opacity-0 text-muted-foreground mt-4">
-            Here's a collection of my recent work. Each project was carefully crafted to solve specific problems and deliver exceptional user experiences.
+            Here's a collection of my projects and work experience. Each project demonstrates my skills and expertise in different areas.
           </p>
         </div>
         
@@ -130,7 +112,7 @@ const ProjectsSection = () => {
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${filter === 'app' ? 'bg-portfolio-purple text-white' : 'bg-white dark:bg-portfolio-blue hover:bg-gray-100'}`}
               onClick={() => setFilter('app')}
             >
-              App Development
+              Testing & QA
             </button>
           </div>
         </div>

@@ -17,28 +17,28 @@ const SkillsSection = () => {
     {
       title: "Frontend",
       skills: [
-        { name: "React.js", percentage: 90, color: "bg-blue-500" },
+        { name: "HTML/CSS", percentage: 90, color: "bg-orange-500" },
         { name: "JavaScript", percentage: 85, color: "bg-yellow-500" },
-        { name: "HTML/CSS", percentage: 95, color: "bg-orange-500" },
-        { name: "TypeScript", percentage: 80, color: "bg-blue-600" },
+        { name: "React", percentage: 80, color: "bg-blue-500" },
+        { name: "Bootstrap", percentage: 85, color: "bg-purple-500" },
       ]
     },
     {
       title: "Backend",
       skills: [
-        { name: "Node.js", percentage: 85, color: "bg-green-500" },
-        { name: "Express", percentage: 80, color: "bg-gray-600" },
-        { name: "MongoDB", percentage: 75, color: "bg-green-600" },
-        { name: "SQL", percentage: 70, color: "bg-blue-400" },
+        { name: "Python", percentage: 80, color: "bg-green-500" },
+        { name: "Java", percentage: 75, color: "bg-blue-600" },
+        { name: "SQL", percentage: 80, color: "bg-blue-400" },
+        { name: "Node.js", percentage: 65, color: "bg-green-600" },
       ]
     },
     {
       title: "Tools",
       skills: [
-        { name: "Git", percentage: 90, color: "bg-orange-600" },
-        { name: "Docker", percentage: 65, color: "bg-blue-500" },
-        { name: "AWS", percentage: 60, color: "bg-yellow-600" },
-        { name: "Figma", percentage: 75, color: "bg-purple-500" },
+        { name: "Git", percentage: 85, color: "bg-orange-600" },
+        { name: "VS Code", percentage: 90, color: "bg-blue-500" },
+        { name: "Excel", percentage: 80, color: "bg-green-500" },
+        { name: "Linux", percentage: 65, color: "bg-gray-600" },
       ]
     },
   ];
@@ -82,7 +82,7 @@ const SkillsSection = () => {
           <h2 className="skills-animate opacity-0 text-portfolio-purple text-lg font-semibold">My Skills</h2>
           <h3 className="skills-animate opacity-0 text-3xl md:text-4xl font-bold mt-2">Technical Expertise</h3>
           <p className="skills-animate opacity-0 text-muted-foreground mt-4">
-            I've acquired a diverse range of skills throughout my career. Here's a comprehensive overview of my technical abilities.
+            I've acquired a diverse range of skills throughout my education and work experience. Here's a comprehensive overview of my technical abilities.
           </p>
         </div>
 
@@ -116,20 +116,20 @@ const SkillsSection = () => {
         
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="skills-animate opacity-0 flex flex-col items-center p-6 bg-portfolio-soft-purple rounded-xl">
-            <div className="text-4xl font-bold text-portfolio-purple">3+</div>
+            <div className="text-4xl font-bold text-portfolio-purple">1+</div>
             <p className="text-center mt-2">Years Experience</p>
           </div>
           <div className="skills-animate opacity-0 flex flex-col items-center p-6 bg-portfolio-soft-blue rounded-xl">
-            <div className="text-4xl font-bold text-blue-600">20+</div>
+            <div className="text-4xl font-bold text-blue-600">2+</div>
             <p className="text-center mt-2">Projects Completed</p>
           </div>
           <div className="skills-animate opacity-0 flex flex-col items-center p-6 bg-green-100 rounded-xl">
-            <div className="text-4xl font-bold text-green-600">15+</div>
-            <p className="text-center mt-2">Happy Clients</p>
+            <div className="text-4xl font-bold text-green-600">4+</div>
+            <p className="text-center mt-2">Certifications</p>
           </div>
           <div className="skills-animate opacity-0 flex flex-col items-center p-6 bg-yellow-100 rounded-xl">
-            <div className="text-4xl font-bold text-yellow-600">5+</div>
-            <p className="text-center mt-2">Awards</p>
+            <div className="text-4xl font-bold text-yellow-600">3+</div>
+            <p className="text-center mt-2">Languages</p>
           </div>
         </div>
       </div>
