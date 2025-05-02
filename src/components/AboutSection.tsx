@@ -24,6 +24,22 @@ const AboutSection = () => {
     };
   }, []);
 
+  const handleDownloadCV = () => {
+    // Create a link element
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // Path to your resume file
+    link.download = 'Ganesh_Chandu_Resume.pdf'; // Suggested name for the download
+    
+    // Append to document
+    document.body.appendChild(link);
+    
+    // Trigger download
+    link.click();
+    
+    // Cleanup
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="about" className="py-20 bg-portfolio-soft-gray">
       <div className="container mx-auto px-4 md:px-6">
@@ -71,7 +87,10 @@ const AboutSection = () => {
               </div>
             </div>
             <div className="about-animate opacity-0 pt-4">
-              <Button className="bg-portfolio-purple hover:bg-portfolio-light-purple text-white rounded-full">
+              <Button 
+                className="bg-portfolio-purple hover:bg-portfolio-light-purple text-white rounded-full"
+                onClick={handleDownloadCV}
+              >
                 Download CV
               </Button>
             </div>

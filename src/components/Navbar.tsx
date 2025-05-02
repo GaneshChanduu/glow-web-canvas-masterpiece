@@ -26,6 +26,22 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleDownloadCV = () => {
+    // Create a link element
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // Path to your resume file
+    link.download = 'Ganesh_Chandu_Resume.pdf'; // Suggested name for the download
+    
+    // Append to document
+    document.body.appendChild(link);
+    
+    // Trigger download
+    link.click();
+    
+    // Cleanup
+    document.body.removeChild(link);
+  };
+
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 dark:bg-portfolio-blue/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
@@ -39,7 +55,10 @@ const Navbar = () => {
           <a href="#skills" className="text-sm font-medium hover:text-portfolio-purple transition-colors">Skills</a>
           <a href="#projects" className="text-sm font-medium hover:text-portfolio-purple transition-colors">Projects</a>
           <a href="#contact" className="text-sm font-medium hover:text-portfolio-purple transition-colors">Contact</a>
-          <Button className="bg-portfolio-purple hover:bg-portfolio-light-purple text-white rounded-full">
+          <Button 
+            className="bg-portfolio-purple hover:bg-portfolio-light-purple text-white rounded-full"
+            onClick={handleDownloadCV}
+          >
             Download CV
           </Button>
         </nav>
@@ -62,7 +81,10 @@ const Navbar = () => {
             <a href="#skills" className="text-sm font-medium hover:text-portfolio-purple transition-colors py-2" onClick={toggleMobileMenu}>Skills</a>
             <a href="#projects" className="text-sm font-medium hover:text-portfolio-purple transition-colors py-2" onClick={toggleMobileMenu}>Projects</a>
             <a href="#contact" className="text-sm font-medium hover:text-portfolio-purple transition-colors py-2" onClick={toggleMobileMenu}>Contact</a>
-            <Button className="bg-portfolio-purple hover:bg-portfolio-light-purple text-white w-full rounded-full">
+            <Button 
+              className="bg-portfolio-purple hover:bg-portfolio-light-purple text-white w-full rounded-full"
+              onClick={handleDownloadCV}
+            >
               Download CV
             </Button>
           </div>
