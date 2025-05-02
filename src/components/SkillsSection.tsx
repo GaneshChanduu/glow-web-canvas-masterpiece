@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 
 type Skill = {
@@ -27,9 +26,7 @@ const SkillsSection = () => {
       title: "Backend",
       skills: [
         { name: "Python", percentage: 80, color: "bg-green-500" },
-        { name: "Java", percentage: 75, color: "bg-blue-600" },
         { name: "SQL", percentage: 80, color: "bg-blue-400" },
-        { name: "Node.js", percentage: 65, color: "bg-green-600" },
       ]
     },
     {
@@ -38,7 +35,6 @@ const SkillsSection = () => {
         { name: "Git", percentage: 85, color: "bg-orange-600" },
         { name: "VS Code", percentage: 90, color: "bg-blue-500" },
         { name: "Excel", percentage: 80, color: "bg-green-500" },
-        { name: "Linux", percentage: 65, color: "bg-gray-600" },
       ]
     },
   ];

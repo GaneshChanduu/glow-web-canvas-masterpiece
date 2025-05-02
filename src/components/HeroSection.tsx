@@ -83,7 +83,7 @@ const HeroSection = () => {
               <div className="absolute inset-8 bg-gradient-to-br from-portfolio-purple to-portfolio-light-purple rounded-full shadow-lg">
                 <div className="absolute inset-2 bg-white dark:bg-portfolio-blue rounded-full overflow-hidden flex items-center justify-center">
                   <img 
-                    src="/lovable-uploads/d694834e-9f66-4f8d-9b92-6682c2dba571.png" 
+                    src="/lovable-uploads/0cc36d4f-6a19-4e68-84ca-b615ec51b223.png" 
                     alt="Dharavath Ganesh Chandu" 
                     className="w-full h-full object-cover"
                   />

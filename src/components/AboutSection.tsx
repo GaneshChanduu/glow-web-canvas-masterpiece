@@ -32,7 +32,7 @@ const AboutSection = () => {
             <div className="relative rounded-2xl overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-tr from-portfolio-purple/20 to-portfolio-light-purple/10 rounded-2xl -translate-x-6 -translate-y-6"></div>
               <img 
-                src="/lovable-uploads/d694834e-9f66-4f8d-9b92-6682c2dba571.png" 
+                src="/lovable-uploads/0cc36d4f-6a19-4e68-84ca-b615ec51b223.png" 
                 alt="Dharavath Ganesh Chandu" 
                 className="w-full h-full object-cover rounded-2xl shadow-lg aspect-[4/3]"
               />
