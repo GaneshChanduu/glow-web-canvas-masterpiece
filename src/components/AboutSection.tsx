@@ -48,7 +48,7 @@ const AboutSection = () => {
             <div className="relative rounded-2xl overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-tr from-portfolio-purple/20 to-portfolio-light-purple/10 rounded-2xl -translate-x-6 -translate-y-6"></div>
               <img 
-                src="/lovable-uploads/0cc36d4f-6a19-4e68-84ca-b615ec51b223.png" 
+                src="/lovable-uploads/e46c136f-c447-4343-b501-a4f72eeccd40.png" 
                 alt="Dharavath Ganesh Chandu" 
                 className="w-full h-full object-cover rounded-2xl shadow-lg aspect-[4/3]"
               />
@@ -61,12 +61,12 @@ const AboutSection = () => {
           
           <div className="space-y-6 order-1 lg:order-2">
             <h2 className="about-animate opacity-0 text-portfolio-purple text-lg font-semibold">About Me</h2>
-            <h3 className="about-animate opacity-0 text-3xl md:text-4xl font-bold">I'm a passionate full-stack developer with expertise in Java, Python, and JavaScript</h3>
+            <h3 className="about-animate opacity-0 text-3xl md:text-4xl font-bold">I'm a passionate Data Analyst with expertise in Python and JavaScript</h3>
             <p className="about-animate opacity-0 text-muted-foreground">
-              Highly motivated individual with strong expertise in Java, Python, and JavaScript, seeking to leverage problem-solving skills in the IT industry. Adept at adapting quickly, collaborating effectively, and delivering results in fast-paced environments.
+              Highly motivated individual with strong expertise in Python and JavaScript, seeking to leverage problem-solving skills in the IT industry. Adept at adapting quickly, collaborating effectively, and delivering results in fast-paced environments.
             </p>
             <p className="about-animate opacity-0 text-muted-foreground">
-              My journey in web development began during my BTech in Computer Science and Engineering. Since then, I've worked on various projects ranging from e-commerce websites to food delivery platforms, and gained professional experience as a Software Quality Assurance at NistApp.
+              My journey in data analysis began during my BTech in Computer Science and Engineering. Since then, I've worked on various projects ranging from e-commerce websites to food delivery platforms, and gained professional experience as a Software Quality Assurance at NistApp.
             </p>
             <div className="about-animate opacity-0 grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
               <div>
@@ -79,11 +79,15 @@ const AboutSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-lg">Email</h4>
-                <p className="text-muted-foreground">ganeshchandu29@gmail.com</p>
+                <p className="text-muted-foreground">
+                  <a href="mailto:ganeshchandu29@gmail.com" className="hover:text-portfolio-purple">ganeshchandu29@gmail.com</a>
+                </p>
               </div>
               <div>
                 <h4 className="font-semibold text-lg">Phone</h4>
-                <p className="text-muted-foreground">+91 8790393917</p>
+                <p className="text-muted-foreground">
+                  <a href="tel:+918790393917" className="hover:text-portfolio-purple">+91 8790393917</a>
+                </p>
               </div>
             </div>
             <div className="about-animate opacity-0 pt-4">

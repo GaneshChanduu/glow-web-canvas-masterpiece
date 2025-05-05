@@ -35,10 +35,10 @@ const HeroSection = () => {
             </h2>
             <div className="space-y-2">
               <h1 className="hero-animate opacity-0 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                Full Stack <span className="text-portfolio-purple">Developer</span> with a passion for building
+                Data <span className="text-portfolio-purple">Analyst</span> with a passion for building
               </h1>
               <p className="hero-animate opacity-0 text-lg md:text-xl text-muted-foreground max-w-lg mt-4">
-                I create elegant solutions using Java, Python, JavaScript, and React to solve real-world problems.
+                I create elegant solutions using Python, JavaScript, and React to solve real-world problems.
               </p>
             </div>
             <div className="hero-animate opacity-0 flex flex-col sm:flex-row gap-4 pt-4">
@@ -83,7 +83,7 @@ const HeroSection = () => {
               <div className="absolute inset-8 bg-gradient-to-br from-portfolio-purple to-portfolio-light-purple rounded-full shadow-lg">
                 <div className="absolute inset-2 bg-white dark:bg-portfolio-blue rounded-full overflow-hidden flex items-center justify-center">
                   <img 
-                    src="/lovable-uploads/0cc36d4f-6a19-4e68-84ca-b615ec51b223.png" 
+                    src="/lovable-uploads/e46c136f-c447-4343-b501-a4f72eeccd40.png" 
                     alt="Dharavath Ganesh Chandu" 
                     className="w-full h-full object-cover"
                   />
