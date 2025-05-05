@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Linkedin, Instagram } from "lucide-react";
+import { Linkedin, Github } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,14 +12,14 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <h2 className="text-2xl font-bold text-portfolio-light-purple mb-4">Portfolio.</h2>
             <p className="text-gray-300 max-w-md">
-              I create insightful data analyses and modern web applications as both a Data Analyst and Full Stack Developer. Let's work together to bring your ideas to life.
+              Analytical and results-driven Data Analyst with strong skills in Python, SQL, Excel, and data visualization, dedicated to turning data into actionable insights.
             </p>
             <div className="flex space-x-4 mt-6">
               <a href="https://www.linkedin.com/in/ganeshchandu/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-portfolio-light-purple transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="https://www.instagram.com/ganeshchanduu/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-portfolio-light-purple transition-colors">
-                <Instagram size={20} />
+              <a href="https://github.com/GaneshChanduu" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-portfolio-light-purple transition-colors">
+                <Github size={20} />
               </a>
             </div>
           </div>

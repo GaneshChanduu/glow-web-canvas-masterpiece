@@ -16,20 +16,20 @@ const ProjectsSection = () => {
   const [projects, setProjects] = useState<Project[]>([
     {
       id: 1,
-      title: "E-Commerce Website",
-      description: "Fully functional e-commerce platform with product listings, shopping cart, and secure checkout",
-      image: "https://images.unsplash.com/photo-1661956602944-249bcd04b63f",
-      category: "web",
-      tags: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+      title: "Telco Customer Churn Analysis",
+      description: "Analyzed factors affecting customer churn using Python, NumPy, Pandas, Matplotlib and Seaborn to identify key churn indicators",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+      category: "analysis",
+      tags: ["Python", "Pandas", "Matplotlib", "Seaborn"],
       link: "#"
     },
     {
       id: 2,
-      title: "Food Delivery Website",
-      description: "Responsive food delivery platform with intuitive navigation and streamlined ordering process",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-      category: "web",
-      tags: ["HTML", "CSS", "Bootstrap"],
+      title: "Sales Data Visualization Dashboard",
+      description: "Created interactive Power BI dashboards to visualize key sales metrics and identify trends for business decision-making",
+      image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8",
+      category: "visualization",
+      tags: ["Power BI", "Data Visualization", "Dashboard"],
       link: "#"
     },
     {
@@ -37,8 +37,8 @@ const ProjectsSection = () => {
       title: "UDAN Testing Project",
       description: "Worked on Universal Digital Assistant testing for nano health and Entab International School websites",
       image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868",
-      category: "app",
-      tags: ["TypeScript", "Testing", "QA"],
+      category: "testing",
+      tags: ["Testing", "QA"],
       link: "#"
     },
     {
@@ -46,7 +46,7 @@ const ProjectsSection = () => {
       title: "SaaS Testing",
       description: "Tested various SaaS applications including Workday, Zoom, Canva, and ServiceNow",
       image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8",
-      category: "app",
+      category: "testing",
       tags: ["QA", "Testing", "SaaS"],
       link: "#"
     },
@@ -90,7 +90,7 @@ const ProjectsSection = () => {
           <h2 className="projects-animate opacity-0 text-portfolio-purple text-lg font-semibold">My Portfolio</h2>
           <h3 className="projects-animate opacity-0 text-3xl md:text-4xl font-bold mt-2">Recent Projects</h3>
           <p className="projects-animate opacity-0 text-muted-foreground mt-4">
-            Here's a collection of my projects and work experience. Each project demonstrates my skills and expertise in different areas.
+            Here's a collection of my data analysis projects and work experience. Each project demonstrates my skills in extracting meaningful insights from data.
           </p>
         </div>
         
@@ -103,14 +103,20 @@ const ProjectsSection = () => {
               All
             </button>
             <button 
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${filter === 'web' ? 'bg-portfolio-purple text-white' : 'bg-white dark:bg-portfolio-blue hover:bg-gray-100'}`}
-              onClick={() => setFilter('web')}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${filter === 'analysis' ? 'bg-portfolio-purple text-white' : 'bg-white dark:bg-portfolio-blue hover:bg-gray-100'}`}
+              onClick={() => setFilter('analysis')}
             >
-              Web Development
+              Data Analysis
             </button>
             <button 
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${filter === 'app' ? 'bg-portfolio-purple text-white' : 'bg-white dark:bg-portfolio-blue hover:bg-gray-100'}`}
-              onClick={() => setFilter('app')}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${filter === 'visualization' ? 'bg-portfolio-purple text-white' : 'bg-white dark:bg-portfolio-blue hover:bg-gray-100'}`}
+              onClick={() => setFilter('visualization')}
+            >
+              Data Visualization
+            </button>
+            <button 
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${filter === 'testing' ? 'bg-portfolio-purple text-white' : 'bg-white dark:bg-portfolio-blue hover:bg-gray-100'}`}
+              onClick={() => setFilter('testing')}
             >
               Testing & QA
             </button>

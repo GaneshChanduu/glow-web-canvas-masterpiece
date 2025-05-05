@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 
 const HeroSection = () => {
@@ -34,10 +35,10 @@ const HeroSection = () => {
             </h2>
             <div className="space-y-2">
               <h1 className="hero-animate opacity-0 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                <span className="text-portfolio-purple">Data Analyst</span> & Full Stack Developer
+                <span className="text-portfolio-purple">Data Analyst</span>
               </h1>
               <p className="hero-animate opacity-0 text-lg md:text-xl text-muted-foreground max-w-lg mt-4">
-                I create elegant solutions using Python, JavaScript, and React to solve real-world problems.
+                Analytical and results-driven Data Analyst with strong skills in Python, SQL, Excel, and data visualization, dedicated to turning data into actionable insights.
               </p>
             </div>
             <div className="hero-animate opacity-0 flex flex-col sm:flex-row gap-4 pt-4">

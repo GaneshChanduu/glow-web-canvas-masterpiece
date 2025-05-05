@@ -15,38 +15,38 @@ type SkillCategory = {
 const SkillsSection = () => {
   const skillCategories: SkillCategory[] = [
     {
-      title: "Frontend",
-      skills: [
-        { name: "HTML/CSS", percentage: 90, color: "bg-orange-500" },
-        { name: "JavaScript", percentage: 85, color: "bg-yellow-500" },
-        { name: "React", percentage: 80, color: "bg-blue-500" },
-        { name: "Bootstrap", percentage: 85, color: "bg-purple-500" },
-      ]
-    },
-    {
-      title: "Backend",
-      skills: [
-        { name: "Python", percentage: 80, color: "bg-green-500" },
-        { name: "SQL", percentage: 80, color: "bg-blue-400" },
-      ]
-    },
-    {
       title: "Data Analysis",
       skills: [
+        { name: "Python", percentage: 90, color: "bg-green-500" },
         { name: "NumPy", percentage: 85, color: "bg-blue-600" },
         { name: "Pandas", percentage: 85, color: "bg-indigo-500" },
         { name: "Matplotlib", percentage: 80, color: "bg-green-600" },
         { name: "Seaborn", percentage: 75, color: "bg-teal-500" },
-        { name: "Power BI", percentage: 70, color: "bg-yellow-600" },
-        { name: "Statistics", percentage: 75, color: "bg-red-500" },
+      ]
+    },
+    {
+      title: "Visualization & Statistics",
+      skills: [
+        { name: "Power BI", percentage: 75, color: "bg-yellow-600" },
+        { name: "Advanced Statistics", percentage: 80, color: "bg-red-500" },
+        { name: "SQL", percentage: 85, color: "bg-blue-400" },
+        { name: "Excel", percentage: 90, color: "bg-green-500" },
       ]
     },
     {
       title: "Tools",
       skills: [
-        { name: "Git", percentage: 85, color: "bg-orange-600" },
-        { name: "VS Code", percentage: 90, color: "bg-blue-500" },
-        { name: "Excel", percentage: 80, color: "bg-green-500" },
+        { name: "Jupyter Notebook", percentage: 85, color: "bg-orange-600" },
+        { name: "Git", percentage: 80, color: "bg-orange-600" },
+        { name: "VS Code", percentage: 85, color: "bg-blue-500" },
+      ]
+    },
+    {
+      title: "Soft Skills",
+      skills: [
+        { name: "Problem Solving", percentage: 90, color: "bg-purple-500" },
+        { name: "Communication", percentage: 85, color: "bg-pink-500" },
+        { name: "Teamwork", percentage: 85, color: "bg-indigo-500" },
       ]
     },
   ];
@@ -90,7 +90,7 @@ const SkillsSection = () => {
           <h2 className="skills-animate opacity-0 text-portfolio-purple text-lg font-semibold">My Skills</h2>
           <h3 className="skills-animate opacity-0 text-3xl md:text-4xl font-bold mt-2">Technical Expertise</h3>
           <p className="skills-animate opacity-0 text-muted-foreground mt-4">
-            I've acquired a diverse range of skills throughout my education and work experience. Here's a comprehensive overview of my technical abilities in both data analysis and full stack development.
+            I've acquired strong data analysis skills throughout my education and work experience. Here's a comprehensive overview of my technical abilities in data analysis and visualization.
           </p>
         </div>
 
