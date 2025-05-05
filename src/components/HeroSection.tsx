@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 
 const HeroSection = () => {
@@ -35,7 +34,7 @@ const HeroSection = () => {
             </h2>
             <div className="space-y-2">
               <h1 className="hero-animate opacity-0 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                Data <span className="text-portfolio-purple">Analyst</span> with a passion for building
+                <span className="text-portfolio-purple">Data Analyst</span> & Full Stack Developer
               </h1>
               <p className="hero-animate opacity-0 text-lg md:text-xl text-muted-foreground max-w-lg mt-4">
                 I create elegant solutions using Python, JavaScript, and React to solve real-world problems.

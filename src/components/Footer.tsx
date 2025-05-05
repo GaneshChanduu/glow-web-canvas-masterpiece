@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <h2 className="text-2xl font-bold text-portfolio-light-purple mb-4">Portfolio.</h2>
             <p className="text-gray-300 max-w-md">
-              I create insightful data analyses and modern web applications that deliver exceptional user experiences. Let's work together to bring your ideas to life.
+              I create insightful data analyses and modern web applications as both a Data Analyst and Full Stack Developer. Let's work together to bring your ideas to life.
             </p>
             <div className="flex space-x-4 mt-6">
               <a href="https://www.linkedin.com/in/ganeshchandu/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-portfolio-light-purple transition-colors">

@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 
 type Skill = {
@@ -27,6 +28,17 @@ const SkillsSection = () => {
       skills: [
         { name: "Python", percentage: 80, color: "bg-green-500" },
         { name: "SQL", percentage: 80, color: "bg-blue-400" },
+      ]
+    },
+    {
+      title: "Data Analysis",
+      skills: [
+        { name: "NumPy", percentage: 85, color: "bg-blue-600" },
+        { name: "Pandas", percentage: 85, color: "bg-indigo-500" },
+        { name: "Matplotlib", percentage: 80, color: "bg-green-600" },
+        { name: "Seaborn", percentage: 75, color: "bg-teal-500" },
+        { name: "Power BI", percentage: 70, color: "bg-yellow-600" },
+        { name: "Statistics", percentage: 75, color: "bg-red-500" },
       ]
     },
     {
@@ -78,11 +90,11 @@ const SkillsSection = () => {
           <h2 className="skills-animate opacity-0 text-portfolio-purple text-lg font-semibold">My Skills</h2>
           <h3 className="skills-animate opacity-0 text-3xl md:text-4xl font-bold mt-2">Technical Expertise</h3>
           <p className="skills-animate opacity-0 text-muted-foreground mt-4">
-            I've acquired a diverse range of skills throughout my education and work experience. Here's a comprehensive overview of my technical abilities.
+            I've acquired a diverse range of skills throughout my education and work experience. Here's a comprehensive overview of my technical abilities in both data analysis and full stack development.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
             <div 
               key={index} 
