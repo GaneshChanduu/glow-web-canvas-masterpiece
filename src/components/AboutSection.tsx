@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 
@@ -60,12 +61,12 @@ const AboutSection = () => {
           
           <div className="space-y-6 order-1 lg:order-2">
             <h2 className="about-animate opacity-0 text-portfolio-purple text-lg font-semibold">About Me</h2>
-            <h3 className="about-animate opacity-0 text-3xl md:text-4xl font-bold">I'm a Data Analyst & Full Stack Developer with expertise in Python and JavaScript</h3>
+            <h3 className="about-animate opacity-0 text-3xl md:text-4xl font-bold">I'm a Data Analyst with expertise in Python and Data Visualization</h3>
             <p className="about-animate opacity-0 text-muted-foreground">
-              Highly motivated individual with strong expertise in Python and JavaScript, seeking to leverage problem-solving skills in the IT industry. Adept at adapting quickly, collaborating effectively, and delivering results in fast-paced environments.
+              Analytical and results-driven Data Analyst with strong skills in Python, SQL, Excel, and data visualization, dedicated to turning data into actionable insights.
             </p>
             <p className="about-animate opacity-0 text-muted-foreground">
-              My journey began during my BTech in Computer Science and Engineering. Since then, I've worked on various projects ranging from e-commerce websites to data analytics platforms, combining my skills in data analysis and full stack development to create comprehensive solutions.
+              My journey began during my BTech in Computer Science and Engineering. Since then, I've worked on various projects including telco customer churn analysis and sales data visualization platforms, combining my analytical skills to extract meaningful business insights.
             </p>
             <div className="about-animate opacity-0 grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
               <div>
