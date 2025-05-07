@@ -1,10 +1,11 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, PhoneCall } from 'lucide-react';
+import emailjs from 'emailjs-com';
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -15,6 +16,14 @@ const ContactSection = () => {
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isEmailServiceInitialized, setIsEmailServiceInitialized] = useState(false);
+
+  useEffect(() => {
+    // Initialize EmailJS with your user ID
+    // Replace "user_yourUserID" with your actual EmailJS user ID
+    emailjs.init("user_yourUserID");
+    setIsEmailServiceInitialized(true);
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -29,36 +38,46 @@ const ContactSection = () => {
     setIsSubmitting(true);
     
     try {
-      // Create mailto URL with form data
-      const mailtoLink = `mailto:ganeshchandu29@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
-        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-      )}`;
+      if (!isEmailServiceInitialized) {
+        throw new Error("Email service not initialized");
+      }
       
-      // Open the mail client
-      window.location.href = mailtoLink;
+      // Prepare the template parameters
+      const templateParams = {
+        from_name: formData.name,
+        reply_to: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      };
+      
+      // Send the email using EmailJS
+      // Replace "template_yourTemplateID" and "service_yourServiceID" with your actual template and service IDs
+      await emailjs.send(
+        "service_yourServiceID", 
+        "template_yourTemplateID",
+        templateParams
+      );
       
       toast({
-        title: "Message ready to send",
-        description: "Your email client has been opened with your message. Please send the email to complete.",
+        title: "Message sent!",
+        description: "Thank you for your message. I'll get back to you soon.",
       });
       
-      // Reset form after slight delay to allow user to see the message was processed
-      setTimeout(() => {
-        setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
-        });
-        setIsSubmitting(false);
-      }, 1000);
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
     } catch (error) {
-      console.error("Error preparing email:", error);
+      console.error("Error sending email:", error);
       toast({
         title: "Error",
-        description: "There was a problem preparing your message. Please try again.",
+        description: "There was a problem sending your message. Please try again.",
         variant: "destructive",
       });
+    } finally {
       setIsSubmitting(false);
     }
   };
