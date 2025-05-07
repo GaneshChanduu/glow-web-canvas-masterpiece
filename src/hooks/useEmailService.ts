@@ -1,8 +1,9 @@
 
 import { useState, useEffect } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
-interface EmailParams {
+// Update interface to extend Record<string, unknown> to fix type error
+interface EmailParams extends Record<string, unknown> {
   from_name: string;
   reply_to: string;
   subject: string;
