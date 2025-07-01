@@ -40,6 +40,14 @@ const AboutSection = () => {
     document.body.removeChild(link);
   };
 
+  const handleImageLoad = () => {
+    console.log('Image loaded successfully');
+  };
+
+  const handleImageError = () => {
+    console.log('Error loading image');
+  };
+
   return (
     <section id="about" className="py-20 bg-portfolio-soft-gray">
       <div className="container mx-auto px-4 md:px-6">
@@ -51,6 +59,8 @@ const AboutSection = () => {
                 src="/lovable-uploads/1e607d63-9cd1-49e0-abb6-5abbf87cb758.png" 
                 alt="Dharavath Ganesh Chandu" 
                 className="w-full h-full object-cover rounded-2xl shadow-lg aspect-[4/3]"
+                onLoad={handleImageLoad}
+                onError={handleImageError}
               />
               <div className="absolute bottom-6 right-6 bg-white dark:bg-portfolio-blue p-4 rounded-xl shadow-lg">
                 <p className="font-bold text-lg">1+ Years</p>
