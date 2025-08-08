@@ -25,15 +25,24 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: "Sales Data Visualization Dashboard",
-      description: "Created interactive Power BI dashboards to visualize key sales metrics and identify trends for business decision-making",
-      image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8",
-      category: "visualization",
-      tags: ["Power BI", "Data Visualization", "Dashboard"],
+      title: "Employee Management System",
+      description: "Developed a comprehensive employee management system using SQL for database operations, handling employee records, payroll, and performance tracking",
+      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf",
+      category: "development",
+      tags: ["SQL", "Database", "Management System"],
       link: "#"
     },
     {
       id: 3,
+      title: "Revenue Opportunities Analysis",
+      description: "Created Power BI dashboards to identify and analyze revenue opportunities, providing insights for strategic business growth and decision-making",
+      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71",
+      category: "visualization",
+      tags: ["Power BI", "Revenue Analysis", "Data Visualization"],
+      link: "#"
+    },
+    {
+      id: 4,
       title: "UDAN Testing Project",
       description: "Worked on Universal Digital Assistant testing for nano health and Entab International School websites",
       image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868",
@@ -42,7 +51,7 @@ const ProjectsSection = () => {
       link: "#"
     },
     {
-      id: 4,
+      id: 5,
       title: "SaaS Testing",
       description: "Tested various SaaS applications including Workday, Zoom, Canva, and ServiceNow",
       image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8",
@@ -107,6 +116,12 @@ const ProjectsSection = () => {
               onClick={() => setFilter('analysis')}
             >
               Data Analysis
+            </button>
+            <button 
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${filter === 'development' ? 'bg-portfolio-purple text-white' : 'bg-white dark:bg-portfolio-blue hover:bg-gray-100'}`}
+              onClick={() => setFilter('development')}
+            >
+              Development
             </button>
             <button 
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${filter === 'visualization' ? 'bg-portfolio-purple text-white' : 'bg-white dark:bg-portfolio-blue hover:bg-gray-100'}`}
