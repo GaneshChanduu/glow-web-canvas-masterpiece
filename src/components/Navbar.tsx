@@ -29,7 +29,7 @@ const Navbar = () => {
   const handleDownloadCV = () => {
     // Create a link element
     const link = document.createElement('a');
-    link.href = '/lovable-uploads/56fe45bc-5ad9-4fe1-b694-fb85b7c6d423.png'; // Path to your resume file
+    link.href = 'https://drive.google.com/uc?export=download&id=1OmHgxE5K72Jibl17x3kqvyOlbLoCvnLs'; // Path to your resume file
     link.download = 'Ganesh_Chandu_Resume.pdf'; // Suggested name for the download
     
     // Append to document
